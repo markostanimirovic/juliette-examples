@@ -1,1 +1,5 @@
-export type Weapon = 'guitar' | 'bass' | 'drums';
+export enum Weapon {
+  GUITAR = '🎸',
+  BASS = '🎻',
+  DRUMS = '🥁',
+}
