@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { MusiciansComponent } from './components/musicians/musicians.component';
+import { MusiciansComponent } from './containers/musicians/musicians.component';
 import { EffectsModule, StoreModule } from 'juliette-ng';
 import { initialAppState } from './store/app-state';
 import { environment } from '../environments/environment';

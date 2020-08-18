@@ -1,5 +1,5 @@
 <ng-container *ngIf="musiciansState$ | async as state">
-  <h1>Musicians</h1>
+  <h1>🤘 Musicians</h1>
   <input type="text" [formControl]="searchTermControl" placeholder="🔎" />
 
   <h1 *ngIf="state.loading; else musiciansList">🎠</h1>

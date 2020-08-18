@@ -5,5 +5,5 @@ import { Injectable } from '@angular/core';
 })
 export class StringHelper {
   containsIgnoreCase = (s1: string, s2: string): boolean =>
-    s1.toLowerCase().indexOf(s2.toLowerCase()) > -1;
+    s1.toLowerCase().includes(s2.toLowerCase());
 }
