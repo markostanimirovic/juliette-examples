@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MusiciansComponent } from './containers/musicians/musicians.component';
 import { EffectsModule, StoreModule } from 'juliette-ng';
-import { initialAppState } from './store/app-state';
+import { initialAppState } from './store';
 import { environment } from '../environments/environment';
 import { MusiciansEffects } from './store/effects/musicians.effects';
 import { ReactiveFormsModule } from '@angular/forms';

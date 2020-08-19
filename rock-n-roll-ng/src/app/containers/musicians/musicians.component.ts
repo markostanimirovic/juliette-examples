@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Store } from 'juliette';
-import { AppState } from '../../store/app-state';
+import { AppState } from '../../store';
 import { fromMusicians } from '../../store/handlers';
 import { FormControl } from '@angular/forms';
 import { debounceTime, distinctUntilChanged, takeUntil } from 'rxjs/operators';

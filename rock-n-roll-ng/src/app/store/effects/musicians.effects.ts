@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ofType, Store } from 'juliette';
-import { AppState } from '../app-state';
+import { AppState } from '../index';
 import { MusiciansService } from '../../core/services/musicians.service';
 import { fromMusicians } from '../handlers';
 import { catchError, map, switchMap, withLatestFrom } from 'rxjs/operators';

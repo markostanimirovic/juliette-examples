@@ -31,8 +31,9 @@ function Musicians() {
         placeholder="🔎"
       />
 
-      {state.loading && <h1>🎠</h1>}
-      {!state.loading && (
+      {state.loading ? (
+        <h1>🎠</h1>
+      ) : (
         <ul>
           {state.musicians.map((musician, i) => (
             <li key={i}>
