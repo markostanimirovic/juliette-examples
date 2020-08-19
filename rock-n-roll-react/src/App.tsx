@@ -1,7 +1,8 @@
 import React from 'react';
+import Musicians from './containers/Musicians';
 
 function App() {
-  return <div className="App">INIT</div>;
+  return <Musicians />;
 }
 
 export default App;
