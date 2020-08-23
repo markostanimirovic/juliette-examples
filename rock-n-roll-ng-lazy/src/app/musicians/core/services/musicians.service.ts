@@ -3,7 +3,7 @@ import { Observable, of } from 'rxjs';
 import { Musician } from '../models/musician';
 import { musiciansMock } from '../mocks/musicians.mock';
 import { delay, map } from 'rxjs/operators';
-import { StringHelper } from '../../../core/services/string.helper';
+import { StringHelper } from '@rnr/core/services/string.helper';
 
 @Injectable({
   providedIn: 'root',
