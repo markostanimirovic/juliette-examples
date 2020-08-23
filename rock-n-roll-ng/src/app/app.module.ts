@@ -14,7 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     ReactiveFormsModule,
     StoreModule.forRoot(initialAppState, !environment.production),
-    EffectsModule.forRoot([MusiciansEffects]),
+    EffectsModule.register([MusiciansEffects]),
   ],
   providers: [],
   bootstrap: [AppComponent],

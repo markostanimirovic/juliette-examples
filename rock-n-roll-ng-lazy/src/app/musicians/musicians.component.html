@@ -1,0 +1,21 @@
+<ng-container *ngIf="musiciansState$ | async as state">
+  <h1>🤘 Musicians</h1>
+  <input type="text" [formControl]="searchTermControl" placeholder="🔎" />
+
+  <h1 *ngIf="state.loading; else musiciansList">🎠</h1>
+  <ng-template #musiciansList>
+    <ul>
+      <li *ngFor="let musician of state.musicians">{{ musician.name }} {{ musician.weapon }}</li>
+    </ul>
+  </ng-template>
+
+  <div class="buffer-top">
+    <button
+      *ngFor="let pageSize of state.pageSizes"
+      (click)="onUpdateSelectedPageSize(pageSize)"
+      [class.selected]="pageSize === state.selectedPageSize"
+    >
+      {{ pageSize }}
+    </button>
+  </div>
+</ng-container>

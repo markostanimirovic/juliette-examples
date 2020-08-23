@@ -1,12 +1,10 @@
 import React, { useCallback, useEffect } from 'react';
 import { AppState } from '../store';
 import { fromMusicians } from '../store/handlers';
-import { useDispatch, useSelector } from 'juliette-react';
-
-const selectMusicians = (state: AppState) => state[fromMusicians.featureKey];
+import { useDispatch, useSelect } from 'juliette-react';
 
 function Musicians() {
-  const state = useSelector(selectMusicians);
+  const state = useSelect<AppState, fromMusicians.State>(fromMusicians.featureKey);
   const dispatch = useDispatch();
 
   const onUpdateSearchTerm = useCallback(
