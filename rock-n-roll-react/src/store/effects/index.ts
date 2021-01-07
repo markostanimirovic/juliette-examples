@@ -1,3 +1,4 @@
 import * as musiciansEffects from './musiciansEffects';
 
-export default [...Object.values(musiciansEffects)];
+const effects = [...Object.values(musiciansEffects)];
+export default effects;
